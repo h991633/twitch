@@ -2,8 +2,8 @@ var nowPagination = ''
 var isNowloading = false
 function getData(cb) {
     isNowloading = true
-    const clientId = 'gp762nuuoqcoxypju8c569th9wz7q5'
-    const Authorization = 'Bearer ggnj7k8xbuom0elzc9f8qku3zkup5w'
+    const clientId = 'icvc2hv3uuzt1elx2epln2cyexno9n'
+    const Authorization = 'Bearer bsombqhaescntubjoha9rw6ve724kp'
     // const game_id='21779'
     // const language='zh'
     // const first='20'
