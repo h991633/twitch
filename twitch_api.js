@@ -3,7 +3,7 @@ var isNowloading = false
 function getData(cb) {
     isNowloading = true
     const clientId = 'icvc2hv3uuzt1elx2epln2cyexno9n'
-    const Authorization = 'Bearer bsombqhaescntubjoha9rw6ve724kp'
+    const Authorization = 'Bearer etis0wk1x84d0wqs8u67upiqkwdund'
     // const game_id='21779'
     // const language='zh'
     // const first='20'
