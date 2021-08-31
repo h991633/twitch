@@ -1,6 +1,7 @@
 var nowPagination = ''
 var isNowloading = false
 function getData(cb) {
+    //cb就是我塞的cb fuc
     isNowloading = true
     const clientId = 'icvc2hv3uuzt1elx2epln2cyexno9n'
     const Authorization = 'Bearer etis0wk1x84d0wqs8u67upiqkwdund'
@@ -16,7 +17,6 @@ function getData(cb) {
     xhr.setRequestHeader('Authorization', Authorization)
     xhr.setRequestHeader('Client-ID', clientId)
     xhr.send()
-
     xhr.onload = function () {
         //console.log(xhr.responseText);
         //判斷 HTTP 狀態碼是否成功連線
@@ -41,8 +41,9 @@ function dataHandling() {
             const div = document.createElement('div')
             $row.appendChild(div)
             div.outerHTML = getColumn(stream)
-            // $row.append(getColumn(stream))
+            
         }
+        
         nowPagination = cursor
         isNowloading = false
     })
@@ -51,13 +52,15 @@ if (!isNowloading) {
     dataHandling()
 }
 function getColumn(data) {
-    return `<div class="col">
+    return `
+                <div class="col">
                     <div class="placeholder"></div>
+                    <a href="https://www.twitch.tv/${data.user_login}">
                     <div class="preview"><img src="${data.thumbnail_url.replace(
                         '{width}x{height}',
                         '320x180'
                     )}" onload="this.style.opacity=1" /></div>
-
+                    </a>
                     <div class="bottom">
                         <div class="avatar"><img src="Spongebob_SquarePants.jpg" /></div>
                         <div class="intro">
@@ -65,7 +68,8 @@ function getColumn(data) {
                             <div class="owner_name">${data.user_name}</div>
                         </div>
                     </div>
-                </div>`
+                </div>
+            `
 }
 window.addEventListener('scroll', function () {
     console.log(
