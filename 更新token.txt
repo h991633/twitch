@@ -1,0 +1,29 @@
+https://id.twitch.tv/oauth2/token
+    ?client_id=<your client ID>
+    &client_secret=<your client secret>
+    &grant_type=client_credentials
+
+
+https://id.twitch.tv/oauth2/token?client_id=icvc2hv3uuzt1elx2epln2cyexno9n&client_secret=l42969b2pk2nmin7mz506e77ufdctw&grant_type=client_credentials
+
+
+
+var xhr = new XMLHttpRequest()
+    xhr.open(
+        'post',
+        'https://id.twitch.tv/oauth2/token?client_id=icvc2hv3uuzt1elx2epln2cyexno9n&client_secret=l42969b2pk2nmin7mz506e77ufdctw&grant_type=client_credentials'
+    )
+
+    xhr.send()
+
+    xhr.onload = function () {
+       
+            var str = JSON.parse(xhr.responseText)
+            
+        console.log(str);
+    }
+
+
+在twitch網頁上console post請求令牌
+
+{access_token: "etis0wk1x84d0wqs8u67upiqkwdund", expires_in: 5341623, token_type: "bearer"}

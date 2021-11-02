@@ -4,7 +4,7 @@ function getData(cb) {
     //cb就是我塞的cb fuc
     isNowloading = true
     const clientId = 'icvc2hv3uuzt1elx2epln2cyexno9n'
-    const Authorization = 'Bearer etis0wk1x84d0wqs8u67upiqkwdund'
+    const Authorization = 'Bearer jtl93298pedvva5paezo55bknjbgj3'
     // const game_id='21779'
     // const language='zh'
     // const first='20'
