@@ -27,3 +27,4 @@ var xhr = new XMLHttpRequest()
 在twitch網頁上console post請求令牌
 
 {access_token: "etis0wk1x84d0wqs8u67upiqkwdund", expires_in: 5341623, token_type: "bearer"}
+{access_token: 'jtl93298pedvva5paezo55bknjbgj3', expires_in: 5485870, token_type: 'bearer'}

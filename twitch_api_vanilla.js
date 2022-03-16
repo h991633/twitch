@@ -4,7 +4,7 @@ function getData(cb) {
     //cb就是我塞的cb fuc
     isNowloading = true
     const clientId = 'icvc2hv3uuzt1elx2epln2cyexno9n'
-    const Authorization = 'Bearer jtl93298pedvva5paezo55bknjbgj3'
+    const Authorization = 'Bearer apm4yfa71slsox381x6fj776q8ad3v'
     // const game_id='21779'
     // const language='zh'
     // const first='20'
@@ -43,6 +43,7 @@ function dataHandling() {
             div.outerHTML = getColumn(stream)
             
         }
+       
         
         nowPagination = cursor
         isNowloading = false
